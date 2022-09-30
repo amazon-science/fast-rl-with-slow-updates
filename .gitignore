@@ -1,0 +1,5 @@
+tmp
+*results*
+*DS_*
+*images/*
+*.ipynb_checkpoints*
