@@ -9,22 +9,14 @@
 </div>
 
 
-Please see `./dopamine/agents/dqn/dqn_agent.py`. Argument `mu` is defined to activate our Proximal Iteration.
-If `mu > 0.0', then Proximal Iteration is being used, and otherwise the model is trained without it.
 
-Dopamine is a research framework for fast prototyping of reinforcement learning
-algorithms. It aims to fill the need for a small, easily grokked codebase in
-which users can freely experiment with wild ideas (speculative research).
+##Introduction
 
+This is the official repository for our paper "Faster deep reinforcement learning with slower online network", which we presented at NeurIPS 2022. We built on the [Dopamine](https://github.com/google/dopamine), which is a research framework for fast prototyping of reinforcement learning algorithms.
 
-## Getting Started
+We make minimal changes to the standard DQN and Rainbow algorithms. Please see `./dopamine/agents/dqn/dqn_agent.py`. Argument `mu` is defined to activate our Proximal Iteration.
+If `mu > 0.0', then Proximal Iteration is being used, and otherwise the model is trained without it, meaning we are implementing regular DQN/Rainbow.
 
-
-We provide docker containers for using Dopamine.
-Instructions can be found [here](https://google.github.io/dopamine/docker/).
-
-Alternatively, Dopamine can be installed from source (preferred) or installed
-with pip. For either of these methods, continue reading at prerequisites.
 
 ### Prerequisites
 
@@ -89,67 +81,4 @@ export PYTHONPATH=$PYTHONPATH:$PWD
 python -m tests.dopamine.atari_init_test
 ```
 
-## Next Steps
 
-View the [docs][docs] for more information on training agents.
-
-We supply [baselines][baselines] for each Dopamine agent.
-
-We also provide a set of [Colaboratory notebooks](https://github.com/google/dopamine/tree/master/dopamine/colab)
-which demonstrate how to use Dopamine.
-
-## References
-
-[Bellemare et al., *The Arcade Learning Environment: An evaluation platform for
-general agents*. Journal of Artificial Intelligence Research, 2013.][ale]
-
-[Machado et al., *Revisiting the Arcade Learning Environment: Evaluation
-Protocols and Open Problems for General Agents*, Journal of Artificial
-Intelligence Research, 2018.][machado]
-
-[Hessel et al., *Rainbow: Combining Improvements in Deep Reinforcement Learning*.
-Proceedings of the AAAI Conference on Artificial Intelligence, 2018.][rainbow]
-
-[Mnih et al., *Human-level Control through Deep Reinforcement Learning*. Nature,
-2015.][dqn]
-
-[Schaul et al., *Prioritized Experience Replay*. Proceedings of the International
-Conference on Learning Representations, 2016.][prioritized_replay]
-
-[Haarnoja et al., *Soft Actor-Critic Algorithms and Applications*,
-arXiv preprint arXiv:1812.05905, 2018.][sac]
-
-## Giving credit
-
-If you use Dopamine in your work, we ask that you cite our
-[white paper][dopamine_paper]. Here is an example BibTeX entry:
-
-```
-@article{castro18dopamine,
-  author    = {Pablo Samuel Castro and
-               Subhodeep Moitra and
-               Carles Gelada and
-               Saurabh Kumar and
-               Marc G. Bellemare},
-  title     = {Dopamine: {A} {R}esearch {F}ramework for {D}eep {R}einforcement {L}earning},
-  year      = {2018},
-  url       = {http://arxiv.org/abs/1812.06110},
-  archivePrefix = {arXiv}
-}
-```
-
-
-
-[docs]: https://google.github.io/dopamine/docs/
-[baselines]: https://google.github.io/dopamine/baselines
-[machado]: https://jair.org/index.php/jair/article/view/11182
-[ale]: https://jair.org/index.php/jair/article/view/10819
-[dqn]: https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf
-[a3c]: http://proceedings.mlr.press/v48/mniha16.html
-[prioritized_replay]: https://arxiv.org/abs/1511.05952
-[c51]: http://proceedings.mlr.press/v70/bellemare17a.html
-[rainbow]: https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/download/17204/16680
-[iqn]: https://arxiv.org/abs/1806.06923
-[sac]: https://arxiv.org/abs/1812.05905
-[dopamine_paper]: https://arxiv.org/abs/1812.06110
-[vitualenv]: https://docs.python.org/3/library/venv.html#creating-virtual-environments
