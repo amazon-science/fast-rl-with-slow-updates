@@ -1,14 +1,4 @@
-# Dopamine (with our Proximal Iteration)
-[Getting Started](#getting-started) |
-[Docs][docs] |
-[Baseline Results][baselines] |
-[Changelist](https://google.github.io/dopamine/docs/changelist)
-
-<div align="center">
-  <img src="https://google.github.io/dopamine/images/dopamine_logo.png"><br><br>
-</div>
-
-
+# Fast RL with Slow Updates
 
 ### Introduction
 
