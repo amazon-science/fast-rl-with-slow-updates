@@ -10,7 +10,7 @@
 
 
 
-##Introduction
+### Introduction
 
 This is the official repository for our paper "Faster deep reinforcement learning with slower online network", which we presented at NeurIPS 2022. We built on the [Dopamine](https://github.com/google/dopamine), which is a research framework for fast prototyping of reinforcement learning algorithms.
 
