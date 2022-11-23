@@ -31,13 +31,6 @@ environments you intend to use before you install Dopamine:
 3. `unzip $ROM_DIR/ROMS.zip -d $ROM_DIR && ale-import-roms $ROM_DIR/ROMS`
 (replace $ROM_DIR with the directory you extracted the ROMs to).
 
-**Mujoco**
-
-1. Install Mujoco and get a license
-[here](https://github.com/openai/mujoco-py#install-mujoco).
-2. Run `pip install mujoco-py` (we recommend using a
-[virtual environment](virtualenv)).
-
 ### Installing from Source
 
 
