@@ -16,31 +16,6 @@ Dopamine is a research framework for fast prototyping of reinforcement learning
 algorithms. It aims to fill the need for a small, easily grokked codebase in
 which users can freely experiment with wild ideas (speculative research).
 
-Our design principles are:
-
-* _Easy experimentation_: Make it easy for new users to run benchmark
-                          experiments.
-* _Flexible development_: Make it easy for new users to try out research ideas.
-* _Compact and reliable_: Provide implementations for a few, battle-tested
-                          algorithms.
-* _Reproducible_: Facilitate reproducibility in results. In particular, our
-                  setup follows the recommendations given by
-                  [Machado et al. (2018)][machado].
-
-Dopamine supports the following agents, implemented with jax:
-
-* DQN ([Mnih et al., 2015][dqn])
-* C51 ([Bellemare et al., 2017][c51])
-* Rainbow ([Hessel et al., 2018][rainbow])
-* IQN ([Dabney et al., 2018][iqn])
-* SAC ([Haarnoja et al., 2018][sac])
-
-For more information on the available agents, see the [docs](https://google.github.io/dopamine/docs).
-
-Many of these agents also have a tensorflow (legacy) implementation, though
-newly added agents are likely to be jax-only.
-
-This is not an official Google product.
 
 ## Getting Started
 
